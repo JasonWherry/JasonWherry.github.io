@@ -1,0 +1,27 @@
+.column {
+	/*float: right;*/
+	position: relative;
+	/*left: 30px;*/
+	width: 50%;
+	max-width: 900px; 
+	word-wrap: break-word;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+#header {
+	font-size: x-large;
+}
