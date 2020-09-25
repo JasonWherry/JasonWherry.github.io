@@ -12,16 +12,26 @@
 
 </head>
 <body>  <!-- style="padding-left: 20px; padding-right: 20px"-->
-	<div class="stripe-2">
+	<div class="stripe-2"> <!--  -->
 		<h1 style="text-align: center; color: white">The Barefoot Bushwackers</h1>
 		<h4 style="text-align: center; color: #7db7ff;">Discover. Recover. Conquer.</h4>
 		<p style="margin-top: -20px;"><br></p>
 	</div>
+	<nav id="ScrollNavbar" class="navbar navbar-light horizontal-nav">
+		<ul class="navbar-nav nav-pills flex-column" id="pills-tab" style="position:fixed; top:20px">
+            <li class="nav-item active" href=#content>
+            	<a href=#content id=avatar-text>Home</a>
+          	</li>
+          	<li class="nav-item">
+             	<a class="nav-link" id="tab-1" data-toggle="tab" href="#sec1" aria-selected="true">Gallery</a>
+            </li>
+    	</ul>
+	</nav>
 	<br>
 
 	<div class="row p-3">
 		<div class="col-sm-6">
-			<figure>
+			<figure id="#content">
 			    <figcaption><b>Athens Tune</b> by Jason Wherry:</figcaption>
 			    <audio
 			        controls
@@ -44,6 +54,9 @@
 		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 		    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
 		</ol>
 		<div class="carousel-inner">
 	    	<div class="carousel-item active" data-interval="2000">
@@ -57,6 +70,15 @@
 	    	</div>
 	    	<div class="carousel-item" data-interval="2000">
 	    		<img class="d-block w-100" src="img/1_grandfather.jpg" alt="Fourth slide">
+	 		</div>
+	    	<div class="carousel-item" data-interval="2000">
+	    		<img class="d-block w-100" src="img/1_cave.jpg" alt="Fifth slide">
+	 		</div> 
+	    	<div class="carousel-item" data-interval="2000">
+	    		<img class="d-block w-100" src="img/2_cave.jpg" alt="Sixth slide">
+	 		</div>
+	    	<div class="carousel-item" data-interval="2000">
+	    		<img class="d-block w-100" src="img/new_group.jpg" alt="Seventh slide">
 	 		</div>
 	 	</div>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
