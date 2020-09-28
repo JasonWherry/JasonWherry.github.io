@@ -48,6 +48,11 @@
 	</div>
 
 	<br>
+	<!-- CSS padding determines how elements look and sit within a container. The Button is in a <div> element in order to add padding.-->
+	<div class="pl-3 pr-3">
+		<button type="button" class="btn btn-outline-dark btn-block " onclick="clickImage()">Open Image in New Tab</button>
+	</div>
+	
 	<div id="carouselExampleIndicators" class="carousel slide p-3" data-ride="carousel">
 	 	<ol class="carousel-indicators">
 	   		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -58,9 +63,9 @@
 		    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
 		    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
 		</ol>
-		<div class="carousel-inner">
+		<div class="carousel-inner" id="img">
 	    	<div class="carousel-item active" data-interval="2000">
-	      		<img class="d-block w-100" src="img/2_indianheadvista.jpg" alt="First slide">
+	      		<img class="d-block w-100" src="img/2_indianheadvista.jpg" alt="First slide" >
 	    	</div>
 	    	<div class="carousel-item" data-interval="2000">
 	    		<img class="d-block w-100" src="img/1_cave.jpg" alt="Second slide">
@@ -84,6 +89,29 @@
 	    		<img class="d-block w-100" src="img/1_indianheadvista.jpg" alt="Ninth slide">
 	 		</div> -->
 	 	</div>
+	 	<script type="text/javascript">
+	 		// document.getElementById("gallery").addEventListener("click", clickImage());
+
+	 		// open image in new tab
+	 		function clickImage(){
+	
+	 			// variables
+	 			var outerDiv = document.getElementsByClassName("carousel-inner")[0];
+	 			var div = document.getElementById("img").getElementsByClassName("carousel-item active")[0];
+	 			var img = div.getElementsByClassName("d-block w-100")[0];
+	 			var url = img.src;
+
+	 			// Alert Messages
+	 			// alert(outerDiv)
+	 			// alert("Carousel-item: " + div);
+	 			// alert("IMG element: " + img);
+	 			// alert("URL: " + url)
+
+	 			// open image in new window
+	 			window.open(url, 'Image');
+
+	 		}
+	 	</script>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 	  		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 	  		<span class="sr-only">Previous</span>
@@ -92,6 +120,7 @@
 	    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
 	    	<span class="sr-only">Next</span>
 	  	</a>
+
 	</div>
 
 
